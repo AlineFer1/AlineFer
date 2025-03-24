@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Email to SMS Gateway - send SMS
-@author: adam getbags
+@author: aline fer
 """
 
 import smtplib
@@ -12,7 +12,7 @@ msg = EmailMessage()
 msg.set_content('lets get a bag.')
 
 msg['From'] = senderEmail # 'email@address.com'
-msg['To'] = gatewayAddress  # '1112223333@vmobl.com'
+msg['To'] = gatewayAddress  # '3213337133@txt.att.net'
 msg['Subject'] = 'Finance Family'
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
