@@ -6,19 +6,18 @@ Email to SMS Gateway - send SMS
 
 import smtplib
 from email.message import EmailMessage
-from emailToSMSConfig import senderEmail, gatewayAddress, appkey
+from emailToSMSConfig import senderEmail, gatewayAddress, appKey
 
 msg = EmailMessage()
-msg.set_content('Lets get a bag.')
+msg.set_content('lets get a bag.')
 
 msg['From'] = senderEmail # 'email@address.com'
-msg['To'] = gatewayAddress # '3213338757@voicestream.net'
-msg['Subject']= 'Finance Family'
+msg['To'] = gatewayAddress  # '1112223333@vmobl.com'
+msg['Subject'] = 'Finance Family'
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login(senderEmail, appkey)
+server.login(senderEmail, appKey)
 
 server.send_message(msg)
 server.quit()
-
