@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 """
 Email to SMS Gateway - config
-@author: adam getbags
+@author: aline fer
 """
 
-senderEmail = 'email@address.com'
-gatewayAddress = '1112224444@vmobl.com'
-appKey = 'abcd efgh ijkl mnop'
+senderEmail = 'alinesf016@gmail.com'
+gatewayAddress = '3213337133@txt.att.net'
+appKey = 'tkbl zrdt hliw omwo'
 
